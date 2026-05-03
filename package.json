@@ -1,21 +1,24 @@
 {
   "name": "@prompt-optimizer/common-lib",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Shared types, enums and RMQ infrastructure for prompt-optimizer services",
   "license": "MIT",
   "type": "module",
   "exports": {
     "./enums": {
       "types": "./dist/enums/index.d.ts",
-      "import": "./dist/enums/index.js"
+      "import": "./dist/enums/index.js",
+      "require": "./dist/enums/index.cjs"
     },
     "./events": {
       "types": "./dist/events/index.d.ts",
-      "import": "./dist/events/index.js"
+      "import": "./dist/events/index.js",
+      "require": "./dist/events/index.cjs"
     },
     "./rmq": {
       "types": "./dist/rmq/index.d.ts",
-      "import": "./dist/rmq/index.js"
+      "import": "./dist/rmq/index.js",
+      "require": "./dist/rmq/index.cjs"
     }
   },
   "typesVersions": {
