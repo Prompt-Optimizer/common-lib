@@ -1,0 +1,79 @@
+{
+  "name": "@prompt-optimizer/common-lib",
+  "version": "1.0.0",
+  "description": "Shared types, enums and RMQ infrastructure for prompt-optimizer services",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./enums": {
+      "types": "./dist/enums/index.d.ts",
+      "import": "./dist/enums/index.js"
+    },
+    "./events": {
+      "types": "./dist/events/index.d.ts",
+      "import": "./dist/events/index.js"
+    },
+    "./rmq": {
+      "types": "./dist/rmq/index.d.ts",
+      "import": "./dist/rmq/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "enums": [
+        "dist/enums/index.d.ts"
+      ],
+      "events": [
+        "dist/events/index.d.ts"
+      ],
+      "rmq": [
+        "dist/rmq/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=11.0.0",
+    "amqplib": ">=0.10.0",
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@nestjs/common": {
+      "optional": true
+    },
+    "amqplib": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^9.39.4",
+    "@nestjs/common": "^11.0.1",
+    "@types/amqplib": "^0.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "amqplib": "^1.0.3",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-complexity": "^1.0.2",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.15.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^7.3.0",
+    "eslint-plugin-security": "^4.0.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.8.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.59.1"
+  }
+}
