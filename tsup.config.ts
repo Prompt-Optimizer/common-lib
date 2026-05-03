@@ -6,7 +6,7 @@ export default defineConfig({
     'events/index': 'src/events/index.ts',
     'rmq/index': 'src/rmq/index.ts',
   },
-  format: ['esm'],
+  format: ['esm', 'cjs'],
   dts: true,
   clean: true,
   sourcemap: true,
