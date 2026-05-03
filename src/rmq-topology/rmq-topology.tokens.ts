@@ -1,0 +1,1 @@
+export const RMQ_TOPOLOGY_OPTIONS = Symbol('RMQ_TOPOLOGY_OPTIONS');

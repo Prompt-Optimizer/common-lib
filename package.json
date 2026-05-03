@@ -19,6 +19,11 @@
       "types": "./dist/rmq/index.d.ts",
       "import": "./dist/rmq/index.js",
       "require": "./dist/rmq/index.cjs"
+    },
+    "./rmq-topology": {
+      "types": "./dist/rmq-topology/index.d.ts",
+      "import": "./dist/rmq-topology/index.js",
+      "require": "./dist/rmq-topology/index.cjs"
     }
   },
   "typesVersions": {
@@ -31,6 +36,9 @@
       ],
       "rmq": [
         "dist/rmq/index.d.ts"
+      ],
+      "rmq-topology": [
+        "dist/rmq-topology/index.d.ts"
       ]
     }
   },
