@@ -8,7 +8,11 @@ export interface BaseEvent {
 }
 
 export interface EventMetadata {
-  tokenUsage: { input: number; output: number };
+  tokenUsage: {
+    input: number;
+    output: number;
+    cachedInput: number;
+  };
   cost: number;
   executionTimeMs: number;
 }
