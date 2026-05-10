@@ -2,6 +2,6 @@ import type { BaseEvent, EventMetadata } from '../base-event';
 
 export interface PromptEvaluatedEvent extends BaseEvent {
   promptId: string;
-  score: number;
+  quality: number;
   metadata: EventMetadata;
 }
