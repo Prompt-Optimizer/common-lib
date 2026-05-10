@@ -15,6 +15,11 @@
       "import": "./dist/events/index.js",
       "require": "./dist/events/index.cjs"
     },
+    "./models": {
+      "types": "./dist/models/index.d.ts",
+      "import": "./dist/models/index.js",
+      "require": "./dist/models/index.cjs"
+    },
     "./rmq": {
       "types": "./dist/rmq/index.d.ts",
       "import": "./dist/rmq/index.js",
@@ -33,6 +38,9 @@
       ],
       "events": [
         "dist/events/index.d.ts"
+      ],
+      "models": [
+        "dist/models/index.d.ts"
       ],
       "rmq": [
         "dist/rmq/index.d.ts"
