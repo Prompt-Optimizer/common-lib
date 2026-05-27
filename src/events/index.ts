@@ -5,5 +5,6 @@ export type {
   OptimizationInitEvent,
   PromptGeneratedEvent,
   PromptEvaluatedEvent,
+  AggregationStartedEvent,
   OptimizationCompletedEvent,
 } from './derived';
