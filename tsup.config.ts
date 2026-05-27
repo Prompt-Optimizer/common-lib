@@ -7,6 +7,7 @@ export default defineConfig({
     'models/index': 'src/models/index.ts',
     'rmq/index': 'src/rmq/index.ts',
     'rmq-topology/index': 'src/rmq-topology/index.ts',
+    'notification-events/index': 'src/notification-events/index.ts',
   },
   format: ['esm', 'cjs'],
   dts: true,

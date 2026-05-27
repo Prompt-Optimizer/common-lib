@@ -29,6 +29,11 @@
       "types": "./dist/rmq-topology/index.d.ts",
       "import": "./dist/rmq-topology/index.js",
       "require": "./dist/rmq-topology/index.cjs"
+    },
+    "./notification-events": {
+      "types": "./dist/notification-events/index.d.ts",
+      "import": "./dist/notification-events/index.js",
+      "require": "./dist/notification-events/index.cjs"
     }
   },
   "typesVersions": {
@@ -47,6 +52,9 @@
       ],
       "rmq-topology": [
         "dist/rmq-topology/index.d.ts"
+      ],
+      "notification-events": [
+        "dist/notification-events/index.d.ts"
       ]
     }
   },
