@@ -29,7 +29,7 @@ export const SUPPORTED_MODELS: readonly SupportedModel[] = [
   { id: 'gemini-2.5-pro', provider: AiProvider.GEMINI, name: 'Gemini 2.5 Pro' },
   { id: 'gemini-2.5-flash', provider: AiProvider.GEMINI, name: 'Gemini 2.5 Flash' },
   { id: 'gemini-2.5-flash-lite', provider: AiProvider.GEMINI, name: 'Gemini 2.5 Flash-Lite' },
-  { id: 'gemini-2.0-flash', provider: AiProvider.GEMINI, name: 'Gemini 2.0 Flash' },
+  { id: 'gemini-3.1-flash-lite', provider: AiProvider.GEMINI, name: 'Gemini 3.1 Flash-Lite' },
 ] as const;
 
 export const SUPPORTED_MODEL_IDS = SUPPORTED_MODELS.map((m) => m.id);
